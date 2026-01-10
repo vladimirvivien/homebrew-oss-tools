@@ -3,7 +3,7 @@ cask "ktop" do
   name "ktop"
   desc "A top-like tool to display kubernetes workload metrics"
   homepage "https://github.com/vladimirvivien/ktop"
-  version "0.5.1"
+  version "0.5.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ktop" do
   on_macos do
     on_intel do
       url "https://github.com/vladimirvivien/ktop/releases/download/v#{version}/ktop_v#{version}_darwin_amd64.tar.gz"
-      sha256 "bd9b47e3842dd3ae287ea3d3d77a0123dcf3874d25710c413019bc42b4fbbe36"
+      sha256 "43688933c2acc8981b1bf07b1c43c442672850502e16cf79755eaa7a39e65eb7"
     end
     on_arm do
       url "https://github.com/vladimirvivien/ktop/releases/download/v#{version}/ktop_v#{version}_darwin_arm64.tar.gz"
-      sha256 "d211d16aed578c192f3b74489e320ae32944b37c5e612c4bca0eead2c7f502ba"
+      sha256 "fb26489789dd3cb267c6b51733f1859810b91ed346c558b0004696975835279a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/vladimirvivien/ktop/releases/download/v#{version}/ktop_v#{version}_linux_amd64.tar.gz"
-      sha256 "6d812781b8491348296dd8e17d10a54816991e1d2c1bb016f31cc4a376ce0da1"
+      sha256 "c6feb9391188f8286dcb63ee4c227aaed4a0776e36a34a3e759585960f631ad5"
     end
     on_arm do
       url "https://github.com/vladimirvivien/ktop/releases/download/v#{version}/ktop_v#{version}_linux_arm64.tar.gz"
-      sha256 "21c819cef57e9e38900ea55681c02ae232f839d3d1757fa7ec7d981083158312"
+      sha256 "da1846f93c7bd712140506dad575ced720d4f1ebdcb9bdca4bbb49d502fa30f5"
     end
   end
 
