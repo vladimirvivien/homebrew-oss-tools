@@ -5,21 +5,21 @@
 class Ktop < Formula
   desc "A top-like tool to display kubernetes workload metrics"
   homepage "https://github.com/vladimirvivien/ktop"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.0/ktop_v0.6.0_darwin_amd64.tar.gz"
-      sha256 "f553dcd9b86013359682d5c359961615a984092f54e927c1676866a407cbdd04"
+      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.1/ktop_v0.6.1_darwin_amd64.tar.gz"
+      sha256 "ce99d2982ddbf7979851e3167664943a8fa2cbeff46fed3c7ffccdf2ecd17987"
 
       define_method(:install) do
         bin.install "ktop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.0/ktop_v0.6.0_darwin_arm64.tar.gz"
-      sha256 "b8b001d256ecac27a8654b848a7e27f329278cd4f4b4d882c37b6c036c3cc40e"
+      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.1/ktop_v0.6.1_darwin_arm64.tar.gz"
+      sha256 "bd586d71a765d20bab39e62a9629e5bc72c9508c221cc0be0af02b195a74c268"
 
       define_method(:install) do
         bin.install "ktop"
@@ -29,15 +29,15 @@ class Ktop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.0/ktop_v0.6.0_linux_amd64.tar.gz"
-      sha256 "15e4e696a2626fe7e90e69bba366b2b71d583d13576acd9a237d6f00f02128ea"
+      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.1/ktop_v0.6.1_linux_amd64.tar.gz"
+      sha256 "354fa49fda7658027cd73e831e07a99da5c9fdc4a11d18eff06763d9ceac6fe0"
       define_method(:install) do
         bin.install "ktop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.0/ktop_v0.6.0_linux_arm64.tar.gz"
-      sha256 "7c919d6fdb4ec1061d027fcf937999ee55f4a1b4089ce4068e37582503744803"
+      url "https://github.com/vladimirvivien/ktop/releases/download/v0.6.1/ktop_v0.6.1_linux_arm64.tar.gz"
+      sha256 "ccf8e79aa70a6b062ddde002169ae81cd35bb33ac60e6c519b8aa5f1add019a1"
       define_method(:install) do
         bin.install "ktop"
       end
